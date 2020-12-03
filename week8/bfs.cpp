@@ -7,27 +7,24 @@
 std::list<int> centralNodes;
 std::list<int> peripheryNodes;
 
-
-// Classe que representa um no
 class Node {
 public:
-  std::list<int> adj;  // Lista de adjacencias
-  bool visited;   // Valor booleano que indica se foi visitado numa pesquisa
-  int distance;   // Distancia ao no origem da pesquisa
+  std::list<int> adj; 
+  bool visited;   
+  int distance;  
 
-  Node() {        // Nao e preciso mais nada porque adj ja foi criada
-  };              // mas queria mostrar que em C++ tambem existem construtores
+  Node() {     
+  };             
 };
 
-// Classe que representa um grafo
 class Graph {
 	public:
-		int n;          // Numero de nos do grafo
-		Node *nodes;    // Array para conter os nos
+		int n;         
+		Node *nodes;   
 
 	Graph(int n) {
 		this->n = n;
-		nodes = new Node[n+1];  // +1 se os comecam em 1 ao inves de 0
+		nodes = new Node[n+1];  
 	}
 
 	void addLink(int a, int b) {
