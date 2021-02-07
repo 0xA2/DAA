@@ -8,10 +8,10 @@ std::list<int> centralNodes;
 std::list<int> peripheryNodes;
 
 class Node {
-public:
-  std::list<int> adj; 
-  bool visited;   
-  int distance;  
+	public:
+  		std::list<int> adj; 
+  		bool visited;   
+  		int distance;  
 
   Node() {     
   };             
